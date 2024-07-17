@@ -17,13 +17,15 @@ while True:
         v+=1
     elif total+min_dis(v+1)==x:
         ans=time*2+1
+        
         break
     elif total+min_dis(v+1)>x:#유지혹은감소
         if total+min_dis(v)<x:
             continue
             #유지
         elif total+min_dis(v)==x:
-            ans=time+1
+            ans=time+v
+           
             break
         elif total+min_dis(v)>x:
             v-=1
