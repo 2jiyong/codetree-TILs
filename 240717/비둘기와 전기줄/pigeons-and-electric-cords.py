@@ -1,6 +1,6 @@
 n=int(input())
 arr=[list(map(int,input().split())) for _ in range(n)]
-pig=[-1]*(n+1)
+pig=[-1]*(11)
 
 cnt=0
 for num,road in arr:
