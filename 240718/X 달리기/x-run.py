@@ -7,6 +7,6 @@ while True:
     total+=v
     time+=1
     v+=1
-    if total*2>x:
+    if total*2>=x:
         break
 print(time*2)
