@@ -7,6 +7,10 @@ while True:
     total+=v
     time+=1
     v+=1
-    if total*2>=x:
+    if total*2==x:
+        ans=time*2
         break
-print(time*2)
+    if total*2>x:
+        ans=(time-1)*2+1
+        break
+print(ans)
