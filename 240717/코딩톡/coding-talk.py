@@ -9,6 +9,9 @@ for i in range(m):
 for i in range(p-1,m):
     people[ord(arr[i][0])-65]=1
 
+if arr[p-1][1]==0:
+    people=[1]*26
+
 for i in range(n):
     if people[i]==0:
         print(chr(i+65), end=' ')
